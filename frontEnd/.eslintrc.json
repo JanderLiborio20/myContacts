@@ -1,0 +1,62 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "airbnb"
+  ],
+  "overrides": [],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "modules": true,
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "react-hooks"],
+  "rules": {
+    "react/require-default-props": "off",
+    "object-curly-newline": [
+      "error",
+      {
+        "ObjectExpression": {
+          "consistent": true,
+          "minProperties": 5,
+          "multiline": true
+        },
+        "ObjectPattern": {
+          "consistent": true,
+          "minProperties": 5,
+          "multiline": true
+        },
+        "ImportDeclaration": {
+          "consistent": true,
+          "minProperties": 5,
+          "multiline": true
+        },
+        "ExportDeclaration": {
+          "consistent": true,
+          "minProperties": 5,
+          "multiline": true
+        }
+      }
+    ],
+    "indent": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/react-in-jsx-scope": "off",
+    "import/prefer-default-export": "off",
+    "react/jsx-no-bind": "off",
+    "class-methods-use-this": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "no-empty": ["error", { "allowEmptyCatch": true }],
+    "quotes": "off",
+    "comma-dangle": "off",
+    "implicit-arrow-linebreak": "off",
+    "function-paren-newline": "off"
+  }
+}
